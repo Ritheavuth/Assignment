@@ -1,47 +1,76 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.root {
-    width: 100%;
-    height: 100%;
+:root {
+    --hover-color: #1e486b;
+    --tab-font-color-hover: #fff;
+    --tab-font-color-default: #a0b3b0;
+    --tab-color-bg: #13232f;
+    --tabs-color-bg: #1a2f3f;
+    --body-bg: #c1bdba;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--body-bg);
+}
+
+.form {
+    width: 350px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--tab-color-bg);
+    margin: 10px 10px;
+}
+
+.form .tabs {
+    overflow: hidden;
+    background-color: var(--tabs-color-bg);
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin:20px;
+    height: 10%;    
 }
 
-/* Right side styling */
+.tabs button {
+    width: 33.33%;
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.5s;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: var(--tab-font-color-default);
+}
 
-.right {
-    border: 0.5px solid black;
-    width: 55%;
+.form .tabs button:hover {
+    background-color: var(--hover-color);
+    transition: 0.5s;
+    color: var(--tab-font-color-hover);
+}
+
+.form .tabs button.active {
+    background-color: var(--hover-color);
+    color: var(--tab-font-color-hover);
+}
+
+
+.tab-content {
+    background-color: var(--hover-color);
     height: 90%;
-    border-radius: 7px;
+    padding: 6px 12px;
+    display: none;
+    color: var(--tab-font-color-hover);
 }
 
+.topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+  }
 
-/* Left side styling */
-
-.left {
-    border: 0.5px solid black;
-    width: 35%;
-    height: 90%;
-    border-radius: 7px;
-}
-
-.left form {
-    margin: 4.5%;
-    width: 90%;
-    height: 95%;
-}
-
-.left form label {
-    font-size: 17px;
-    font-weight: 700;
-}
-
-.left form input {
-    width: 100% ;
-    height: 30px;
-}

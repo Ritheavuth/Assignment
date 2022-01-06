@@ -7,20 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Info Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
-    <div class="root">
-        <div class="left frame">
-            <form action="Post">
-                <section class="name">
-                    <label for="country_name">Country Name:</label><br><br>
-                    <input type="text" name="country_name" placeholder="Enter a Country Name...">
+    <div class="form">
+        <div class="tabs">
+            <button class="tab" id="first-tab" onclick="openTab(event, 'Add-tab')">Add</button>
+            <button class="tab" id="second-tab" onclick="openTab(event, 'Remove-tab')">Remove</button>
+            <button class="tab" id="third-tab" onclick="openTab(event, 'Update-tab')">Update</button>
+            <button class="tab" id="last-tab" onclick="openTab(event, 'Delete-tab')">Delete</button>
+        </div>
+        <div class="tab-content w3-animate-opacity" id="Add-tab" >
+            <form action="" id="Add-form">
+                <span onclick="closeTab('Add-tab')" class="topright">&times</span>
+                <h4>Country Info:</h4>
+                <section class="country_name">
+                    <label for="country_name">Country Name</label>
+                    <input type="text" name="country_name">
                 </section>
             </form>
         </div>
-        <div class="right frame">
-            <h1>Table</h1>
+
+        <div class="tab-content w3-animate-opacity" id="Remove-tab" >
+            <span onclick="closeTab('Remove-tab')" class="topright">&times</span>
+            <h4>Remove</h4>
+            <form action="" id="Remove-form">
+
+            </form>
+        </div>
+
+        <div class="tab-content w3-animate-opacity" id="Update-tab" >
+            <span onclick="closeTab('Update-tab')" class="topright">&times</span>
+            <h4>Update</h4>
+            <form action="" id="Update-form">
+
+            </form>
+        </div>
+
+        <div class="tab-content w3-animate-opacity" id="Delete-tab" >
+            <span onclick="closeTab('Delete-tab')" class="topright">&times</span>
+            <h4>Delete</h4>
+            <form action="" id="Delete-form">
+
+            </form>
         </div>
 
     </div>
