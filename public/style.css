@@ -9,11 +9,13 @@
     --tab-color-bg: #13232f;
     --tabs-color-bg: #1a2f3f;
     --body-bg: #c1bdba;
+    --table-border-color: #111;
+    --repo-bg: #13232f;
 }
 
 body {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     background-color: var(--body-bg);
 }
@@ -74,3 +76,18 @@ body {
     font-size: 28px;
   }
 
+/* Repository */
+
+.repository {
+    margin: 10px 10px;
+    background-color: var(--repo-bg) ;
+    width: 50%;
+    height: 600px;
+}
+
+.repository .table {
+    margin: 5%;
+    width: 90%;
+    height: 90;
+    background-color: #fff;
+}
