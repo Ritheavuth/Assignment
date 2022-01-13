@@ -1,76 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Country Info Form</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Country Repository</title>
 </head>
-
 <body>
-    <div class="form">
-        <div class="tabs">
-            <button class="tab" id="first-tab" onclick="openTab(event, 'Add-tab')">Add</button>
-            <button class="tab" id="second-tab" onclick="openTab(event, 'Remove-tab')">Remove</button>
-            <button class="tab" id="third-tab" onclick="openTab(event, 'Update-tab')">Update</button>
-            <button class="tab" id="last-tab" onclick="openTab(event, 'Delete-tab')">Delete</button>
-        </div>
-        <div class="tab-content w3-animate-opacity" id="Add-tab">
-            <span onclick="closeTab('Add-tab')" class="topright">&times</span>
-            <h4>Country Info:</h4>
-            <form action="" id="Add-form">
 
-                <section class="country_name">
-                    <label for="country_name">Country Name</label>
-                    <input type="text" name="country_name">
-                </section>
-                <button type="submit" class="+">Add</button>
-            </form>
-        </div>
+    <form class="country_info">
+        <label for="country_id">Country ID</label>
+        <input type="text" name="country_id">
+        <label for="country_name">Country Name</label>
+        <input type="text" name="country_name">
+        <label for="language">Language</label>
+        <input type="text" name="language">
+        <label for="region">Region</label>
+        <select name="region" placeholder="">
+            <option value="Africa">Africa</option>
+            <option value="Antartica">Antarctica</option>
+            <option value="Australia">Australia</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="North-America">North America</option>
+            <option value="South-America">South America</option>
+        </select>
+        <button type="submit" class="add">Add</button> 
+        <button class="find">Find</button> 
+        <button class="deleteAll">Delete All</button> 
+    </form>
 
-        <div class="tab-content w3-animate-opacity" id="Remove-tab">
-            <span onclick="closeTab('Remove-tab')" class="topright">&times</span>
-            <h4>Remove</h4>
-            <form action="" id="Remove-form">
-
-            </form>
-        </div>
-
-        <div class="tab-content w3-animate-opacity" id="Update-tab">
-            <span onclick="closeTab('Update-tab')" class="topright">&times</span>
-            <h4>Update</h4>
-            <form action="" id="Update-form">
-
-            </form>
-        </div>
-
-        <div class="tab-content w3-animate-opacity" id="Delete-tab">
-            <span onclick="closeTab('Delete-tab')" class="topright">&times</span>
-            <h4>Delete</h4>
-            <form action="" id="Delete-form">
-
-            </form>
-        </div>
-
-    </div>
-
-    <div class="repository">
-
-        <div class="table">
-            <table>
-            
-            </table>
-        </div>
+    <table>
         
-
-    </div>
-
-    <script src="script.js"></script>
-
-
+    </table>
+    
 </body>
-
 </html>
