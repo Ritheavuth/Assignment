@@ -9,14 +9,14 @@
 <body>
 
     <form class="country_info">
-        <label for="country_id">Country ID</label>
-        <input type="text" name="country_id">
+        <label for="id">Country ID</label>
+        <input type="number" name="id" id="id">
         <label for="country_name">Country Name</label>
-        <input type="text" name="country_name">
+        <input type="text" name="country_name" id="country_name">
         <label for="language">Language</label>
-        <input type="text" name="language">
+        <input type="text" name="language" id="language">
         <label for="region">Region</label>
-        <select name="region" placeholder="">
+        <select name="region" id="region" value="option">
             <option value="Africa">Africa</option>
             <option value="Antartica">Antarctica</option>
             <option value="Australia">Australia</option>
@@ -25,14 +25,24 @@
             <option value="North-America">North America</option>
             <option value="South-America">South America</option>
         </select>
-        <button type="submit" class="add">Add</button> 
-        <button class="find">Find</button> 
-        <button class="deleteAll">Delete All</button> 
+        <button id="add" onclick="addRecord()">Add</button> 
+        <button id="edit" onclick="editRecord()">Edit</button> 
+        <button id="find" onclick="findRecord()">Find</button>
+        <button id="delete" onclick="deleteRecord()">Delete Record</button> 
     </form>
 
     <table>
-        
+        <thead>
+            <th>Country ID</th>
+            <th>Country Name</th>
+            <th>Language</th>
+            <th>Region</th>
+        </thead>
+        <tbody id="table">
+
+        </tbody>
     </table>
     
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,11 +1,25 @@
 {
-    "Country Information": [
-        {
-            "Country Name":"China",
-            "Region":"Asia",
-            "Currency":"Yen",
-            "Population":"1.402B",
-            "Language":"Mandarin"
-        }
-    ]
+  "CountryInformation": [
+    {
+      "id":1,
+      "country_name": "China",
+      "language": "chinese",
+      "region":"Asia",
+      "trash":"trash404"
+    },
+    {
+      "id":2,
+      "country_name": "Cambodia",
+      "language": "khmer",
+      "region":"Asia",
+      "trash":"trash404"
+    },
+    {
+      "id":3,
+      "country_name": "Thailand",
+      "language": "thai",
+      "region":"Asia",
+      "trash":"trash404"
+    }
+  ]
 }
